@@ -7,11 +7,11 @@
 
 header{
     background-color: purple;
-    padding: 16px 0;
+    padding: 16px 0; /*espaçamento */
     color: #fff;
-    display: flex;
+    display: flex;/*deixa o botão ao lado de "galeria de fotos"*/
     border-bottom: 16px solid blue;
-    justify-content: center;
+    justify-content: center; /*deixa o conteúdo centralizado*/
     text-transform: uppercase;
     font-style: italic;
 }
@@ -50,7 +50,7 @@ button{
 
 ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*quando chega no limite, cria-se uma nova linha */
     justify-content: center;
 }
 
@@ -59,7 +59,7 @@ ul li{
     list-style: none;
     position: relative;
     max-height: 280px;
-    overflow-y: hidden;
+    overflow-y: hidden; /*todo conteudo q passar do limite fica escondido */
 
 }
 
@@ -70,11 +70,11 @@ ul li img{
 .overlay-imagem-link{
     padding: 16px;
     background-color: rgba(0,0,0,0.7);
-    position: absolute;
+    position: absolute; /*para q ele não vaze do layout, o elemento pai precisa ter o position relative */
     bottom: 0;
     left: 0;
     width: 100%;
-    opacity: 0;
+    opacity: 0; /*aumenta de forma decimal, começa no 0 (não vemos) e vai até o 1 */
     transition: all ease .5s;
 }
 
